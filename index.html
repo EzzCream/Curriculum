@@ -49,14 +49,15 @@
 			</section>
 		</header>
 		<main>
-			<section class="buscador">
-				<div class="card-link">Sobre mi</div>
-				<div class="card-link">Aptitudes</div>
-				<div class="card-link">Experiencia</div>
-				<div class="card-link">Educacion</div>
-				<div class="card-link">Proyectos</div>
-				<div class="card-link">Contacto</div>
+			<section class="buscador fondo">
+				<div class="card-link contenido">Sobre mi</div>
+				<div class="card-link contenido">Aptitudes</div>
+				<div class="card-link contenido">Experiencia</div>
+				<div class="card-link contenido">Educacion</div>
+				<div class="card-link contenido">Proyectos</div>
+				<div class="card-link contenido">Contacto</div>
 			</section>
+			<br />
 			<section class="sobre-mi">
 				<h2>Sobre mi</h2>
 				<p>
@@ -71,7 +72,7 @@
 					eos laborum amet?
 				</p>
 			</section>
-			<section class="aptitudes fondo">
+			<section class="aptitudes contenido fondo">
 				<h2>Aptitudes</h2>
 				<section class="container-aptitudes">
 					<div>
@@ -127,11 +128,11 @@
 			<section class="sect-exp">
 				<h2>Experiencia</h2>
 				<section class="experiencia">
-					<div class="card-exp">
+					<div class="card-exp contenido">
 						<h4>Freelancer</h4>
-						<div>
+						<div class="info-exp">
 							<p>Trabajo frontend</p>
-							<p>Tecnologias utilizadas</p>
+							<p>Tecnologias utilizadas:</p>
 							<ul>
 								<li>Javascript</li>
 								<li>React</li>
@@ -140,11 +141,11 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card-exp">
+					<div class="card-exp contenido">
 						<h4>Front-end</h4>
-						<div>
+						<div class="info-exp">
 							<p>Desarrollo Front-end ecommerce</p>
-							<p>Tecnologias utilizadas</p>
+							<p>Tecnologias utilizadas:</p>
 							<ul>
 								<li>Javascript</li>
 								<li>React</li>
@@ -153,11 +154,11 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card-exp">
+					<div class="card-exp contenido">
 						<h4>Back-end</h4>
-						<div>
+						<div class="info-exp">
 							<p>Trabajo Backend ecommerce</p>
-							<p>Tecnologias utilizadas</p>
+							<p>Tecnologias utilizadas:</p>
 							<ul>
 								<li>Javascript</li>
 								<li>Express</li>
@@ -172,15 +173,104 @@
 			</section>
 			<section class="fondo">
 				<h2>Educacion</h2>
+				<section class="educacion contenido">
+					<div class="buscador info-es">
+						<img
+							class="escuela-img"
+							src="./images/IPN.jpg"
+							alt=""
+						/>
+						<div class="text-es">
+							<h4>CECyT 7 "Cuauhtemoc"</h4>
+							<p>
+								Técnico en Instalaciones y mantenimiento
+								eléctrico
+							</p>
+						</div>
+					</div>
+					<div class="buscador info-es">
+						<img
+							class="escuela-img"
+							src="./images/UPIICSA.jpg"
+							alt=""
+						/>
+						<div class="text-es">
+							<h4>UPIICSA IPN</h4>
+							<p>Licenciatura en Ciencias de la Informática</p>
+						</div>
+					</div>
+					<div class="buscador info-es">
+						<img
+							class="escuela-img"
+							src="./images/coderhouse.jpg"
+							alt=""
+						/>
+						<div class="text-es">
+							<h4>CODERHOUSE</h4>
+							<ul>
+								<li>Curso - Pogramacion Backend</li>
+								<li>Curso - React JS</li>
+								<li>Curso - Desarrollo web - En curso</li>
+								<li>Carrera - Data Scientist</li>
+							</ul>
+						</div>
+					</div>
+					<div class="buscador info-es">
+						<img
+							class="escuela-img"
+							src="./images/udemy.png"
+							alt=""
+						/>
+						<div class="text-es">
+							<h4>UDEMY</h4>
+							<ul>
+								<li>Curso - React JS</li>
+								<li>Curso - Front-end developer</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
+				<br />
 				<h2>Proyectos</h2>
-				<section>
-					<div></div>
+				<section class="contenido pro">
+					<div class="card">
+						<div></div>
+					</div>
+					<div class="card">
+						<div></div>
+					</div>
+					<div class="card">
+						<div></div>
+					</div>
 				</section>
 			</section>
 			<section class="fondo">
 				<h2>Contacto</h2>
+				<h4>Si quieres contactarme, deja tu informacion aqui</h4>
+				<br />
+				<form class="contenido" action="">
+					<label for="nombre">Nombre</label>
+					<input name="nombre" type="text" placeholder="Nombre" />
+					<br />
+					<label for="correo">Correo</label>
+					<input
+						type="text"
+						name="correo"
+						id=""
+						placeholder="Correo"
+					/>
+					<br />
+					<label for="comentario">Comentario</label>
+					<input
+						type="text"
+						name="comentario"
+						id=""
+						placeholder="Comentario"
+					/>
+				</form>
+				<br />
 			</section>
 		</main>
 	</body>
