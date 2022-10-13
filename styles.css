@@ -36,7 +36,7 @@ header {
 	flex-wrap: wrap;
 	align-items: center;
 }
-.card {
+.card-link {
 	border-radius: 41% 59% 33% 67% / 67% 47% 53% 33%;
 	width: 150px;
 	height: 150px;
@@ -51,7 +51,7 @@ header {
 
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.card:hover {
+.card-link:hover {
 	transform: scale(1.04);
 	transition: all 0.2s;
 }
@@ -86,7 +86,19 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: column;
+	margin: 30px;
 }
 h2 {
 	text-align: center;
+}
+.card-exp {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 30px;
+	width: 100%;
+}
+.sect-exp {
+	padding: 20px;
 }
