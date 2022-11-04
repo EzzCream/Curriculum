@@ -5,10 +5,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
 		<title>Curriculum</title>
 	</head>
 	<body>
 		<header>
+			<img src="./images/fotoPerfil.jpg" alt="Oscar foto perfil" />
+			<a href="">Aptitudes</a>
+			<a href="">Experiencia</a>
+			<a href="">Educacion</a>
+			<a href="">Proyectos</a>
+			<a href="">Contacto</a>
+		</header>
+		<section class="header fondo">
 			<section class="contenido">
 				<section class="fotocontain">
 					<img
@@ -18,11 +32,20 @@
 					/>
 				</section>
 				<section class="informacion">
-					<h1 class="blanco">Oscar Antonio Rodriguez Carmona</h1>
-					<p class="blanco">Full-Stack MERN</p>
-					<p class="blanco">Ingenieria de Software</p>
-					<p class="blanco">
-						Estudiante de Ciencias de la Informatica
+					<h1>Oscar Antonio Rodriguez Carmona</h1>
+					<h6>Full-Stack MERN</h6>
+					<h6>Estudiante de Ciencias de la Informatica</h6>
+					<h6>Ingenieria de Software</h6>
+					<p class="sobre-mi">
+						¿Tu mejor opción? No lo sé, pero no pierdes nada
+						conociéndome. 😊 Me gusta mucho la tecnología y todo lo
+						que engloba, tengo conocimientos en el desarrollo web
+						(MERN), diseño y manejo de bases de datos e ingeniería
+						de software. Javascript es mi lenguaje de programación
+						favorito. 💛 Soy una persona responsable, que siempre
+						busca aprender y tener el mejor desempeño posible,
+						además de ser una persona analítica y crítica.
+						Estudiante de Ciencias de la Informática.
 					</p>
 					<section>
 						<a href="https://github.com/OscarAntonioR"
@@ -47,32 +70,9 @@
 					</section>
 				</section>
 			</section>
-		</header>
+		</section>
 		<main>
-			<section class="buscador fondo">
-				<div class="card-link contenido">Sobre mi</div>
-				<div class="card-link contenido">Aptitudes</div>
-				<div class="card-link contenido">Experiencia</div>
-				<div class="card-link contenido">Educacion</div>
-				<div class="card-link contenido">Proyectos</div>
-				<div class="card-link contenido">Contacto</div>
-			</section>
-			<br />
-			<section class="sobre-mi">
-				<h2>Sobre mi</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Facilis, architecto inventore? Inventore quisquam voluptatem
-					veritatis reprehenderit harum rem adipisci dicta natus id,
-					aliquam dolorem molestias accusantium cumque, nesciunt atque
-					fuga. Lorem ipsum dolor, sit amet consectetur adipisicing
-					elit. Laboriosam itaque quidem tempora nostrum nisi corporis
-					necessitatibus architecto. Architecto quibusdam eius
-					praesentium laboriosam ullam dolorum blanditiis tempore quo,
-					eos laborum amet?
-				</p>
-			</section>
-			<section class="aptitudes contenido fondo">
+			<section class="aptitudes contenido">
 				<h2>Aptitudes</h2>
 				<section class="container-aptitudes">
 					<div>
@@ -125,7 +125,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="sect-exp">
+			<section class="sect-exp fondo p-3">
 				<h2>Experiencia</h2>
 				<section class="experiencia">
 					<div class="card-exp contenido">
@@ -141,6 +141,7 @@
 							</ul>
 						</div>
 					</div>
+					<br />
 					<div class="card-exp contenido">
 						<h4>Front-end</h4>
 						<div class="info-exp">
@@ -154,6 +155,7 @@
 							</ul>
 						</div>
 					</div>
+					<br />
 					<div class="card-exp contenido">
 						<h4>Back-end</h4>
 						<div class="info-exp">
@@ -171,7 +173,8 @@
 					</div>
 				</section>
 			</section>
-			<section class="fondo">
+			<section class="p-3">
+				<br />
 				<h2>Educacion</h2>
 				<section class="educacion contenido">
 					<div class="buscador info-es">
@@ -231,7 +234,7 @@
 					</div>
 				</section>
 			</section>
-			<section>
+			<section class="fondo">
 				<br />
 				<h2>Proyectos</h2>
 				<section class="contenido pro">
@@ -246,32 +249,46 @@
 					</div>
 				</section>
 			</section>
-			<section class="fondo">
+			<section class="p-3">
 				<h2>Contacto</h2>
-				<h4>Si quieres contactarme, deja tu informacion aqui</h4>
+				<h5>Si quieres contactarme, deja tu informacion aqui</h5>
 				<br />
 				<form class="contenido" action="">
-					<label for="nombre">Nombre</label>
-					<input name="nombre" type="text" placeholder="Nombre" />
+					<label for="nombre" class="form-label">Nombre</label>
+					<input
+						name="nombre"
+						class="form-control"
+						type="text"
+						placeholder="Nombre"
+					/>
 					<br />
-					<label for="correo">Correo</label>
+					<label for="correo" class="form-label">Correo</label>
 					<input
 						type="text"
 						name="correo"
-						id=""
+						class="form-control"
 						placeholder="Correo"
 					/>
 					<br />
-					<label for="comentario">Comentario</label>
+					<label for="comentario" class="form-label"
+						>Comentario</label
+					>
 					<input
 						type="text"
 						name="comentario"
-						id=""
+						class="form-control"
 						placeholder="Comentario"
 					/>
 				</form>
 				<br />
 			</section>
 		</main>
+		<hr />
+		<footer>Designed by Oscar.</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
